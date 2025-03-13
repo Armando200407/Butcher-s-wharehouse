@@ -1,0 +1,253 @@
+/* Estilo general */
+
+body {
+    background-color: #363636;
+    color: #e0e0e0;
+    font-family: 'Trebuchet MS';
+    background-image: url('fotos/fondo.jpg'); /* Canvia la ruta per la teva */
+    background-size: cover; /* Ajusta la mida perquè cobreixi tota la pantalla */
+    background-position: center; /* Centra la imatge */
+    background-attachment: fixed; /* Manté el fons fix quan fas scroll */
+    background-repeat: no-repeat; /* Evita que la imatge es repeteixi */
+}
+
+/* Estilos del encabezado */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #3b2424;
+    color: white;
+    font-family: 'Palatino Linotype';
+    border: 3px solid #b69a40; /* Borde más marcado */
+    border-radius: 10px;
+}
+
+header img {
+    height: 50px;
+    margin: 0 30px 0 20px;
+}
+
+header h1 {
+    margin: 0;
+    flex-grow: 1;
+}
+
+/* Navegación */
+
+nav {
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 10px;
+    font-family: 'Trebuchet MS';
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #664444; /* Color morado al pasar el mouse */
+    color: rgb(255, 225, 54);
+    border-radius: 3px;
+}
+
+/* Submenú */
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f4f4f4;
+    list-style: none;
+    padding: 0;
+    min-width: 210px;
+}
+
+nav ul li:hover ul {
+    display: block;
+    background-color: #664444; /* Color morado al pasar el mouse */
+    color: white;
+    border-radius: 3px;
+}
+
+nav ul li ul li a {
+    color: white;
+    padding: 0px 10px;
+}
+
+nav ul li ul li a:hover {
+    background-color: transparent;
+    color: rgb(255, 225, 54);
+}
+
+nav ul li ul li {
+    margin: 20px 25px; /* Agrega espacio vertical entre elementos */
+}
+
+/* ------------------------------------------------ */
+
+.bienvenida {
+    background-color: transparent; /* Color de fondo diferente */
+    border: 0px solid #000000; /* Borde más marcado */
+    max-width: 1200px; /* Ajusta aquest valor segons necessitis */
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 20px; /* Bordes redondeados */
+    text-align: center; /* Centrar contenido */
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.bienvenida h2{
+    padding: 40px;
+    font-family: 'Palatino Linotype';
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: #ffd445;
+}
+
+.bienvenida p{
+    margin-top: 0px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.video-container iframe {
+    width: 80%; /* Ajusta el ancho del video (puedes cambiarlo) */
+    max-width: 1000px; /* Máximo ancho para evitar que se agrande demasiado */
+    height: 550px; /* Ajusta la altura del video */
+    border-radius: 20px; /* Opcional: esquinas redondeadas */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Efecto sombra */
+}
+
+.descarga {
+    background-color: #646464; /* Color al pasar el mouse */; /* Color de fondo diferente */
+    border: 0px solid #000000; /* Borde más marcado */
+    padding: 40px;
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 20px; /* Bordes redondeados */
+    text-align: center; /* Centrar contenido */
+    margin-top: 10px;
+    margin-bottom: 200px;
+}
+
+.descarga h2{
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+form label {
+    margin-right: 5px;
+}
+
+form input {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+    padding: 30px;
+    border: 2px solid #ccc;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #252525;
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 40px;
+}
+
+.read-more {
+    display: block;
+    margin-top: 10px;
+    color: #0c7dff;
+    text-decoration: underline;
+}
+
+.article-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+article h2 {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+article h3 {
+    color: #ffffff;
+}
+
+article p {
+    margin: 10px 0;
+    color: #e0e0e0;
+    text-align: justify;
+    
+
+}
+
+article a {
+    color: #66b2ff;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------------------------ */
+
+h3 {
+    color: #e0e0e0;
+}
+
+h4 {
+    color: #b0b0b0;
+    margin-top: 10px;
+}
